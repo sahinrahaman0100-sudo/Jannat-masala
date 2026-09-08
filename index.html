@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jannat Masala | ঘরের রান্নায় আসল স্বাদের ছোঁয়া</title>
+  <meta name="description" content="Jannat Masala — প্রতিদিনের রান্নার জন্য মানসম্মত মশলা। হলুদ, লঙ্কা, জিরা, ধনে গুঁড়ো এবং আরও অনেক মশলা। WhatsApp-এ অর্ডার করুন।" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jannat Masala | ঘরের রান্নায় আসল স্বাদের ছোঁয়া" />
+  <meta property="og:description" content="প্রতিদিনের রান্নার জন্য মানসম্মত মশলা। হলুদ, লঙ্কা, জিরা, ধনে গুঁড়ো এবং আরও অনেক মশলা। WhatsApp-এ অর্ডার করুন।" />
+  <meta property="og:locale" content="bn_IN" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__logo">Jannat Masala</a>
+
+      <nav class="navbar__links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="icon-btn" id="cartToggleBtn" aria-label="কার্ট খুলুন">
+          🛒
+          <span class="badge" id="cartBadge" hidden>0</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggleBtn" aria-label="মেনু খুলুন">
+          <span class="hamburger" id="hamburgerIcon"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__content fade-up">
+          <span class="hero__rule"></span>
+          <h1 class="hero__heading">ঘরের রান্নায় আসল স্বাদের ছোঁয়া</h1>
+          <p class="hero__sub">Jannat Masala — প্রতিদিনের রান্নায় খাঁটি মশলার স্বাদ।</p>
+          <div class="hero__buttons">
+            <a href="#products" class="btn btn--turmeric">মশলা দেখুন</a>
+            <button class="btn btn--outline" id="heroWhatsappBtn">WhatsApp-এ অর্ডার করুন</button>
+          </div>
+        </div>
+        <div class="hero__image-wrap fade-up" style="animation-delay:.1s">
+          <div class="hero__blob"></div>
+          <img id="heroImage" class="hero__image" alt="Jannat Masala — ঘরে তৈরি খাঁটি মশলা" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== USP ===== -->
+    <section class="usp">
+      <div class="usp__inner">
+        <div class="usp__item">
+          <span class="usp__icon">🌿</span>
+          <div>
+            <h3>বাছাই করা মশলা</h3>
+            <p>যত্ন সহকারে বাছাই করা প্রতিটি মশলা।</p>
+          </div>
+        </div>
+        <div class="usp__item">
+          <span class="usp__icon">✨</span>
+          <div>
+            <h3>প্রিমিয়াম কোয়ালিটি</h3>
+            <p>প্রতিটি প্যাকেটে মানের প্রতিশ্রুতি।</p>
+          </div>
+        </div>
+        <div class="usp__item">
+          <span class="usp__icon">🍲</span>
+          <div>
+            <h3>ঘরের রান্নার স্বাদ</h3>
+            <p>মায়ের হাতের রান্নার মতোই আপন স্বাদ।</p>
+          </div>
+        </div>
+        <div class="usp__item">
+          <span class="usp__icon">❤️</span>
+          <div>
+            <h3>ভালোবাসা দিয়ে তৈরি</h3>
+            <p>প্রতিটি ধাপে যত্ন আর ভালোবাসা।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="products" id="products">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>আমাদের মশলা</h2>
+          <p>আপনার রান্নার জন্য বেছে নিন পছন্দের Jannat Masala</p>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <!-- product cards injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="section-inner about__grid">
+        <h2>স্বাদের গল্প,<br />ভালোবাসার সাথে</h2>
+        <div class="about__copy">
+          <p>Jannat Masala শুরু হয়েছিল একটা ছোট্ট ইচ্ছা থেকে — প্রতিদিনের বাঙালি রান্নাঘরে সহজে হাতের কাছে ভালো মশলা পৌঁছে দেওয়া। হলুদ, লঙ্কা, জিরা থেকে ধনে — প্রতিটা প্যাকেট তৈরি হয় রান্নার আসল স্বাদটা ধরে রাখার চেষ্টায়।</p>
+          <p>West Bengal-এর ঘরে ঘরে যে স্বাদের সঙ্গে মানুষ বড় হয়েছে, সেই চেনা স্বাদটাই আমরা আপনার হেঁশেলে ফিরিয়ে আনতে চাই — সহজে, বিশ্বাসযোগ্যভাবে, আর একটু যত্নের সঙ্গে।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why">
+      <div class="section-inner">
+        <div class="why__grid">
+          <div class="why__card">
+            <span class="why__icon">🌶️</span>
+            <h3>Rich Aroma</h3>
+            <p>রান্নার শুরুতেই ম ম করে ওঠে ঘরের গন্ধ।</p>
+          </div>
+          <div class="why__card">
+            <span class="why__icon">🌿</span>
+            <h3>Carefully Selected Spices</h3>
+            <p>যত্ন নিয়ে বাছাই করা মশলার উপকরণ।</p>
+          </div>
+          <div class="why__card">
+            <span class="why__icon">🍲</span>
+            <h3>Perfect for Everyday Cooking</h3>
+            <p>রোজকার তরকারি থেকে বিশেষ পদ — সবেতেই মানানসই।</p>
+          </div>
+          <div class="why__card">
+            <span class="why__icon">❤️</span>
+            <h3>Made for Bengali Kitchens</h3>
+            <p>বাঙালি হেঁশেলের স্বাদ আর অভ্যাসকে মাথায় রেখে তৈরি।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RECIPES ===== -->
+    <section class="recipes" id="recipes">
+      <div class="section-inner">
+        <h2>আজ কী রান্না হবে?</h2>
+        <div class="recipe-grid" id="recipeGrid">
+          <!-- recipe cards injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INSTAGRAM ===== -->
+    <section class="instagram">
+      <div class="section-inner instagram__inner">
+        <span class="instagram__icon">📷</span>
+        <h2>Follow Jannat Masala</h2>
+        <p>আমাদের নতুন মশলা, রান্নার inspiration আর updates পেতে Instagram-এ আমাদের follow করুন।</p>
+        <p class="instagram__handle">@jannat.masala</p>
+        <a id="instagramBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn--dark">Instagram-এ দেখুন</a>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="section-inner">
+        <h2>যোগাযোগ করুন</h2>
+        <p class="contact__brand">Jannat Masala</p>
+        <ul class="contact__list">
+          <li>📱 WhatsApp: +91 9775994656</li>
+          <li>📍 West Bengal, India</li>
+          <li>📷 @jannat.masala</li>
+        </ul>
+        <button id="contactWhatsappBtn" class="btn btn--turmeric">WhatsApp-এ যোগাযোগ করুন</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="section-inner footer__inner">
+      <div>
+        <p class="footer__brand">Jannat Masala</p>
+        <p class="footer__tagline">ঘরের রান্নায় আসল স্বাদের ছোঁয়া</p>
+      </div>
+      <nav class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#contact">Contact</a>
+        <a id="footerInstagram" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a id="footerWhatsapp" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+    </div>
+    <p class="footer__copyright">© 2026 Jannat Masala. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ===== MOBILE BOTTOM BAR ===== -->
+  <div class="mobile-bar" id="mobileBar">
+    <button id="mobileCartBtn" class="mobile-bar__btn">
+      <span class="mobile-bar__cart-icon">
+        🛒
+        <span class="badge" id="mobileCartBadge" hidden>0</span>
+      </span>
+      কার্ট
+    </button>
+    <button id="mobileWhatsappBtn" class="mobile-bar__btn mobile-bar__btn--accent">
+      💬 WhatsApp Order
+    </button>
+  </div>
+
+  <!-- ===== CART DRAWER / PANEL ===== -->
+  <div class="overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <h2>আপনার অর্ডার</h2>
+      <button class="icon-btn" id="closeCartBtn" aria-label="বন্ধ করুন">✕</button>
+    </div>
+    <div class="cart-drawer__body" id="cartBody">
+      <!-- cart items injected by script.js -->
+    </div>
+    <div class="cart-drawer__footer" id="cartFooter" hidden>
+      <div class="cart-drawer__row">
+        <button id="clearCartBtn" class="link-btn">কার্ট খালি করুন</button>
+        <span class="cart-drawer__total">মোট: ₹<span id="cartTotal">0</span></span>
+      </div>
+      <button id="checkoutBtn" class="btn btn--red btn--full">WhatsApp-এ অর্ডার করুন</button>
+    </div>
+  </aside>
+
+  <!-- ===== CUSTOMER DETAILS MODAL ===== -->
+  <div class="overlay" id="formOverlay"></div>
+  <div class="modal" id="formModal" aria-hidden="true">
+    <div class="modal__box">
+      <div class="modal__header">
+        <h2>আপনার তথ্য দিন</h2>
+        <button class="icon-btn" id="closeFormBtn" aria-label="বন্ধ করুন">✕</button>
+      </div>
+      <form id="customerForm" novalidate>
+        <label>
+          নাম
+          <input type="text" id="customerName" placeholder="আপনার পুরো নাম" required />
+          <span class="form-error" id="nameError">নাম আবশ্যক</span>
+        </label>
+        <label>
+          ফোন নম্বর
+          <input type="tel" id="customerPhone" placeholder="98XXXXXXXX" required />
+          <span class="form-error" id="phoneError">ফোন নম্বর আবশ্যক</span>
+        </label>
+        <label>
+          ডেলিভারি ঠিকানা
+          <textarea id="customerAddress" rows="3" placeholder="বাড়ি নম্বর, রাস্তা, শহর, জেলা" required></textarea>
+          <span class="form-error" id="addressError">ঠিকানা আবশ্যক</span>
+        </label>
+        <button type="submit" class="btn btn--red btn--full">WhatsApp-এ পাঠান</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
